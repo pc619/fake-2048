@@ -94,16 +94,16 @@ Board.withRandomNewTile = function (board) {
 // Remember, it must also consider whether the cell merges or not!
 
 
-Board.tileMovementLeft =
+Board.leftAnimation =
 
 // Once you have completed the Board.tileMovementLeft, you can derive the
 // following ones.
 
-Board.tileMovementRight =
+Board.rightAnimation =
 
-Board.tileMovementUp =
+Board.upAnimation =
 
-Board.tileMovementDown =
+Board.downAnimation =
 
 
 export default Object.freeze(Board);
