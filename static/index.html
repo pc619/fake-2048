@@ -1,1 +1,89 @@
-hey
+<!doctype html>
+<html lang="en-gb">
+<meta charset="utf-8">
+<title>2048</title>
+<link rel="stylesheet" href="style.css">
+<link rel="shortcut icon" href="favicon.png">
+
+<body>
+    <div class="container">
+        <h1>Fake 2048</h1>
+        <div class="box score-box">
+            <h3>Score</h3>
+            <p id="score">0</p>
+        </div>
+    </div>
+    <div class="grid full invisible" id="lost-textbox">
+        <div class="losebox">
+            <h2>YOU SUCK!</h2>
+            <a class = "btn" href="#" onclick="window.location.reload(true);">Try again</a>
+        </div>
+    </div>
+    <div class="grid black-bg">
+        <div class="grid" id="game-grid">
+            <div class="row">
+                <div class = "col span-1-of-4">
+                    <object class="col span-1-of-4 inside" id="00">1</object>
+                </div>
+                <div class = "col span-1-of-4">
+                    <object class="col span-1-of-4 inside" id="01">1</object>
+                </div>
+                <div class = "col span-1-of-4">
+                    <object class="col span-1-of-4 inside" id="02">1</object>
+                </div>
+                <div class = "col span-1-of-4">
+                    <object class="col span-1-of-4 inside" id="03">1</object>
+                </div>
+            </div>
+            <div class="row">
+                <div class = "col span-1-of-4">
+                    <object class="col span-1-of-4 inside" id="10">1</object>
+                </div>
+                <div class = "col span-1-of-4">
+                    <object class="col span-1-of-4 inside" id="11">1</object>
+                </div>
+                <div class = "col span-1-of-4">
+                    <object class="col span-1-of-4 inside" id="12">1</object>
+                </div>
+                <div class = "col span-1-of-4">
+                    <object class="col span-1-of-4 inside" id="13">1</object>
+                </div>
+            </div>
+            <div class="row">
+                <div class = "col span-1-of-4">
+                    <object class="col span-1-of-4 inside" id="20">1</object>
+                </div>
+                <div class = "col span-1-of-4">
+                    <object class="col span-1-of-4 inside" id="21">1</object>
+                </div>
+                <div class = "col span-1-of-4">
+                    <object class="col span-1-of-4 inside" id="22">1</object>
+                </div>
+                <div class = "col span-1-of-4">
+                    <object class="col span-1-of-4 inside" id="23">1</object>
+                </div>
+            </div>
+            <div class="row">
+                <div class = "col span-1-of-4">
+                    <object class="col span-1-of-4 inside" id="30">1</object>
+                </div>
+                <div class = "col span-1-of-4">
+                    <object class="col span-1-of-4 inside" id="31">1</object>
+                </div>
+                <div class = "col span-1-of-4">
+                    <object class="col span-1-of-4 inside" id="32">1</object>
+                </div>
+                <div class = "col span-1-of-4">
+                    <object class="col span-1-of-4 inside" id="33">1</object>
+                </div>
+            </div>
+            </div>
+        </div>
+
+
+
+    <script type="module" src="main.js"></script>
+    
+</body>
+
+</html>
