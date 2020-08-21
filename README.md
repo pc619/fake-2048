@@ -4,7 +4,7 @@ Now that you have finished all the tutorial sheets you are ready to create your 
 This project contains the following features that your final web app must also contain: 
 - An appropriate file structure with the static folder being served by the server.
 - A server on port 8080 (currently very simple without sessions or cookies - but you don't need to worry about this yet!)
-- Appropriately written test files.
+- Appropriately written test files (you can run these before heading to the browser with the Mocha Test launch configuration).
 
 The index.html and style.css files have already been created for you, as well as the ui2048.js file which is file that handles user input.
 Your task in this project will be to create the functional aspect of the game by following the instructions below. The mandatory tasks only edit the board2048.js file.

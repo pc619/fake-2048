@@ -1,13 +1,8 @@
 import Board from "./board2048.js";
-import List from "./list.js";
 import F from "./functional.js";
 const ui = Object.create(null);
 
 const el = (id) => document.getElementById(id);
-
-const cellList = [];
-
-const boardTable = el("boardTable");
 
 let board = Board.withRandomNewTile(Board.zeroBoard());
 
@@ -23,6 +18,9 @@ ui.init = function () {
         if (JSON.stringify(board) !== JSON.stringify(move(board))) {
             board = Board.withRandomNewTile(move(board));
             updateUi(board);
+            if (!Board.hasLegalMoves(board)) {
+                el("lost-textbox").className = "losebox lost-grid";
+            }
         }
     };
 

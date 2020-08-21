@@ -82,9 +82,12 @@ h2 {
     transform: translateX(-50%);
     vertical-align: middle;
     text-align: center;
-    font-size: 180%;
     transition: opacity 0.5s, filter 0.5s;
     
+}
+
+.grid .col {
+    font-size: 180%;
 }
 
 .grid-behind {
@@ -97,23 +100,9 @@ h2 {
     transform: translateX(-50%);
     vertical-align: middle;
     text-align: center;
-    font-size: 180%;
     transition: opacity 0.5s, filter 0.5s;
     position: absolute;
 
-}
-
-
-.lost-grid {
-    opacity: 55%;
-    filter: blur(1.8px);
-    -webkit-filter: blur(1.8px);
-    z-index: -1;
-}
-
-.black-bg {
-    background-color: #58514a;
-    z-index: -1;
 }
 
 .row {
@@ -128,46 +117,58 @@ h2 {
 }
 
 .invisible {
-    opacity: 0%;
+    display: none;
     filter: blur(0px);
     -webkit-filter: blur(1.8px);
 }
 
-.full {
-    width: 600px;
-    height: 600px;
-    color: white;
-    position: absolute;
-    background-color: transparent;
+@keyframes fade-in {
+    0% {
+        opacity: 0%;
+    }
+    100% {
+        opacity: 100%;
+    }
 }
 
 
 .losebox {
-    width: 100%;
-    margin-top: 210px;
+    width: 600px;
+    height: 600px;
+    border-radius: 8px;
     vertical-align: middle;
-    z-index: 100;
+    position: absolute;
+
+}
+
+.lost-grid {
+    animation: fade-in 1s;
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+.losebox h2 {
+    margin-top: 230px;
+    font-size: 300%;
 }
 
 .btn:link,
 .btn:visited  {
     line-height: normal;
     display: inline-block;
-    background-color: white;
-    padding: 20px 50px;
-    border-radius: 30px;
-    font-size: 60%;
+    background-color: #BBADA0;
+    padding: 15px 35px;
+    border-radius: 5px;
+    font-size: 90%;
     text-decoration: none;
-    color: #776E65;
-    font-weight: 100;
-    text-transform: uppercase;
-    transition: background-color 0.5s, box-shadow 0.5s;
+    color: #ffffff;
+    font-weight: 600;
+    letter-spacing: 0.8px;
+    transition: background-color 0.5s;
 }
 
 .btn:hover,
 .btn:active {
-    background-color: #EDE0C8;
-    box-shadow: 3px 3px 18px #888888;
+    background-color: #92877c;
 } 
 .col {
     display: block;
